@@ -1,0 +1,51 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build Debug x86",
+            "type": "shell",
+            "command": "scons",
+            "args": [
+                "target=debug",
+                "bits=32"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Build Debug x64",
+            "type": "shell",
+            "command": "scons",
+            "args": [
+                "target=debug",
+                "bits=64"
+            ],
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Build Release x86",
+            "type": "shell",
+            "command": "scons",
+            "args": [
+                "target=release",
+                "bits=32"
+            ],
+            "problemMatcher": []
+        },
+        {
+            "label": "Build Release x64",
+            "type": "shell",
+            "command": "scons",
+            "args": [
+                "target=release",
+                "bits=64"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}
