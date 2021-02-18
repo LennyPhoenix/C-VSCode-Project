@@ -1,0 +1,6 @@
+# Symbol Databases
+*.idb
+*.pdb
+
+# SCons
+.sconsign.dblite
